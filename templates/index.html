@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Home - Grains of Wrath</title>
+{% endblock %}
+{% block header %}
+<div id="top"></div>
+<header class="header">
+    <div class="header-image">
+        <img src="{{ url_for('static', filename='./css/Images/Grains of Wrath Logo.jpg') }}" alt="Grains of Wrath Logo" height="200px">
+        <h2>Restaurant and Brewery</h2>
+        <h4>500 Fakeplace Way, Burke, VA 22015</h4>
+        <h4>Open 11AM - 11PM Monday-Saturday</h4>
+    </div>
+</header>
+{% endblock %}
+{% block body %}
+<main>
+    <h3 class="paragraph-heading">Welcome to Grains of Wrath!</h3>
+
+    <p class="paragraph-home">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae id unde eius
+        accusamus suscipit nihil voluptatum quam voluptatem totam error natus, assumenda repudiandae repellat deleniti
+        odio accusantium. Nemo nulla, sapiente, illum neque laborum ut culpa fugit libero praesentium ex odit fugiat,
+        rem illo reprehenderit! Dolores incidunt quia mollitia voluptatem!</p>
+    <div class="image-sets-home-page">
+        <div class="image-container">
+            <img id="wheat-image" src="{{ url_for('static', filename='./css/Images/image-wheat-medium.jpg') }}" width="300px" height="200px" alt="Grain Image">
+        </div>
+        <div class="image-container">
+            <img id="customer-image" src="{{ url_for('static', filename='./css/Images/happy-customers.png') }}" width="300px" height="200px" alt="Customer Image">
+        </div>
+        <div class="image-container">
+            <img id="beer-image" src="{{ url_for('static', filename='./css/Images/light-beer.jpeg') }}" width="300px" height="200px" alt="Light Beer Image">
+        </div>
+    </div>
+
+    <p class="paragraph-home">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto harum nam ratione
+        eveniet alias vero tempore delectus laborum aliquam soluta numquam dolorum distinctio, reiciendis provident? Rem
+        sunt commodi a dolorum doloribus dicta vero, obcaecati hic!</p>
+    <div class="image-sets-home-page">
+        <div class="image-container">
+            <img id="spirits-image" src="{{ url_for('static', filename='./css/Images/spirits.png') }}" width="300px" height="200px" alt="Bar Image">
+        </div>
+        <div class="image-container">
+            <img id="restaurant-image" src="{{ url_for('static', filename='./css/Images/happy-customers-outdoors.jpeg') }}" width="300px" height="200px"
+                alt="Restaurant Image">
+        </div>
+        <div class="image-container">
+            <img id="barrel-image" src="{{ url_for('static', filename='./css/Images/barrels.png') }}" width="300px" height="200px" alt="Barrels Image">
+        </div>
+    </div>
+</main>
+{% endblock %}

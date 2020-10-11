@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Our Team - Grains of Wrath</title>
+{% endblock %}
+{% block header %}
+<div id="top"></div>
+<header class="header">
+    <div class="header-image">
+        <h1>Grains of Wrath</h1>
+        <h2>Our Team</h2>
+    </div>
+</header>
+{% endblock %}
+{% block body %}
+<main>
+    <!-- AI-generated images of people from https://thispersondoesnotexist.com/ -->
+    <div id="team-members">
+        <div class="member-bio">
+            <div id="founder">
+                <img src="{{ url_for('static', filename='./css/Images/Person1.jpg') }}" alt="Our founder" width="200px" height="">
+                <h4>
+                    Terry Johnson, Founder
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi velit molestiae cum, alias veniam, maxime soluta
+                    itaque ullam explicabo doloremque culpa harum non, aut quis.</p>
+            </div>
+        </div>
+        <div class="member-bio">
+            <div id="brewmaster">
+                <img src="{{ url_for('static', filename='./css/Images/person4.jpg') }}" alt="Our Brewmaster" width="200px" height="">
+                <h4>
+                    Chuck Sweeney, Brewmaster
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi velit molestiae cum, alias veniam, maxime soluta
+                    itaque ullam explicabo doloremque culpa harum non, aut quis.</p>
+            </div>
+        </div>
+        <div class="member-bio">
+            <div id="head-chef">
+                <img src="{{ url_for('static', filename='./css/Images/person3.jpg') }}" alt="Our Head Chef" width="200px" height="">
+                <h4>
+                    William Kingston, Head Chef
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi velit molestiae cum, alias veniam, maxime soluta
+                    itaque ullam explicabo doloremque culpa harum non, aut quis.</p>
+            </div>
+        </div>
+        <div class="member-bio">
+            <div id="marketing">
+                <img src="{{ url_for('static', filename='./css/Images/person2.jpg') }}" alt="Our Head of Marketing" width="200px" height="">
+                <h4>
+                    Jessica Johnson, Head of Marketing
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi velit molestiae cum, alias veniam, maxime soluta
+                    itaque ullam explicabo doloremque culpa harum non, aut quis.</p>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

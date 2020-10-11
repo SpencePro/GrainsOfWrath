@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Error Page - Grains of Wrath</title>
+{% endblock %}
+{% block header %}
+<div id="top"></div>
+<header class="header">
+    <div class="header-image">
+        <h1>Grains of Wrath</h1>
+        <h2>Contact Us</h2>
+    </div>
+</header>
+{% endblock %}
+{% block body %}
+<main>
+    <div class="error">
+        <h1>
+            Sorry! There was an error
+        </h1>
+        <h3>
+            Please try again
+        </h3>
+        <input type="button" value="Go back to the previous page" id="error-button" onclick="history.back(-1)">
+    </div>
+</main>
+{% endblock %}

@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Menu - Grains of Wrath</title>
+{% endblock %}
+{% block header %}
+<div id="top"></div>
+<header class="header">
+    <div class="header-image">
+        <h1>Grains of Wrath</h1>
+        <h2>Menu</h2>
+    </div>
+</header>
+{% endblock %}
+{% block body %}
+<main>
+    <!-- Make each section collapsible -->
+    <section id="appetizers">
+        <h3>
+            Appetizers
+        </h3>
+        <div class="menu-item">
+            <h4>
+                Buffalo Wings
+            </h4>
+            <img src="{{ url_for('static', filename='./css/Images/buffalo-wings.jpg') }}" alt="Buffalo Wings" height="150px" width="200px">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam cum dicta, obcaecati maiores voluptatem veniam!
+                <span class="price">$$$</span>
+        </div>
+        <div class="menu-item">
+            <h4>
+                Garlic Bread
+            </h4>
+            <img src="{{ url_for('static', filename='./css/Images/garlic-bread.jpeg') }}" alt="Garlic Bread" height="150px" width="200px">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam cum dicta, obcaecati maiores voluptatem veniam!
+                <span class="price">$$$</span>
+        </div>
+        <div class="menu-item">
+            <h4>
+                Charcuterie Board
+            </h4>
+            <img src="{{ url_for('static', filename='./css/Images/charcuterie-board.jpg') }}" alt="Charcuterie Board" height="150px" width="200px">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam cum dicta, obcaecati maiores voluptatem veniam!
+                <span class="price">$$$</span>
+        </div>
+    </section>
+    <section id="entrees">
+        <h3>
+            Entrees
+        </h3>
+        <div class="menu-item">
+            <h4>
+                Bratwurst
+            </h4>
+            <img src="{{ url_for('static', filename='./css/Images/bratwurst.jpeg') }}" alt="Bratwurst" height="150px" width="200px">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam cum dicta, obcaecati maiores voluptatem veniam!
+                <span class="price">$$$</span>
+            </p>
+        </div>
+        <div class="menu-item">
+            <h4>
+                Grilled Salmon
+            </h4>
+            <img src="{{ url_for('static', filename='./css/Images/grilled-salmon.jpg') }}" alt="Grilled Salmon" height="150px" width="200px">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam cum dicta, obcaecati maiores voluptatem veniam!
+                <span class="price">$$$</span>
+            </p>
+        </div>
+        <div class="menu-item">
+            <h4>
+                Roast Chicken
+            </h4>
+            <img src="{{ url_for('static', filename='./css/Images/roasted-chicken.jpg') }}" alt="Roast Chicken" height="150px" width="200px">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam cum dicta, obcaecati maiores voluptatem veniam!
+                <span class="price">$$$</span>
+            </p>
+        </div>
+        <div class="menu-item">
+            <h4>
+                Lasagna
+            </h4>
+            <img src="{{ url_for('static', filename='./css/Images/lasagna.jpg') }}" alt="Lasagna" height="150px" width="200px">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam cum dicta, obcaecati maiores voluptatem veniam!
+                <span class="price">$$$</span>
+            </p>
+        </div>
+    </section>
+    <section id="sides">
+        <h3>
+            Sides
+        </h3>
+        <div class="menu-item">
+            <h4>
+                French Fries
+            </h4>
+            <img src="{{ url_for('static', filename='./css/Images/french-fries.jpg') }}" alt="French Fries" height="150px" width="200px">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam cum dicta, obcaecati maiores voluptatem veniam!
+                <span class="price">$$$</span>
+        </div>
+        <div class="menu-item">
+            <h4>
+                Baked Potato
+            </h4>
+            <img src="{{ url_for('static', filename='./css/Images/baked-potato.jpg') }}" alt="Baked Potato" height="150px" width="200px">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam cum dicta, obcaecati maiores voluptatem veniam!
+                <span class="price">$$$</span>
+        </div>
+        <div class="menu-item">
+            <h4>
+                Side Salad
+            </h4>
+            <img src="{{ url_for('static', filename='./css/Images/side-salad.jpg') }}" alt="Side Salad" height="150px" width="200px">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam cum dicta, obcaecati maiores voluptatem veniam!
+                <span class="price">$$$</span>
+        </div>
+    </section>
+    <section id="dessert">
+        <h3>
+            Dessert
+        </h3>
+        <div class="menu-item">
+            <h4>
+                Cheesecake
+            </h4>
+            <img src="{{ url_for('static', filename='./css/Images/cheesecake.jpg') }}" alt="Cheesecake" height="150px" width="200px">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam cum dicta, obcaecati maiores voluptatem veniam!
+                <span class="price">$$$</span>
+        </div>
+        <div class="menu-item">
+            <h4>
+                Brownie a la Mode
+            </h4>
+            <img src="{{ url_for('static', filename='./css/Images/brownie-a-la-mode.jpg') }}" alt="Brownie a la Mode" height="150px" width="200px">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam cum dicta, obcaecati maiores voluptatem veniam!
+                <span class="price">$$$</span>
+        </div>
+    </section>
+</main>
+{% endblock %}

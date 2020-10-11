@@ -1,0 +1,53 @@
+{% extends 'base.html' %} 
+{% block head %}
+<title>Contact Us - Grains of Wrath</title>
+{% endblock %}
+{% block header %}
+<div id="top"></div>
+<header class="header">
+    <div class="header-image">
+        <h1>Grains of Wrath</h1>
+        <h2>Contact Us</h2>
+    </div>
+</header>
+{% endblock %}
+{% block body %}
+<main>
+    <div class="feedback">
+        <h3>
+            Thoughts? Compliments? Let us know!
+        </h3>
+        <form action="{{ url_for('submit_comment') }}" method="POST">
+            <textarea maxlength="250" name="comment" id="comment" cols="50" rows="10"></textarea>
+            <br>
+            <input type="submit">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <h4 class=flashes>
+                {% for message in messages %}
+                {{ message }}
+                {% endfor %}
+            </h4>
+            {% endif %}
+            {% endwith %}
+        </form>
+        <div id="quote">
+            <h3>
+                “Beer is proof that God loves us and wants us to be happy.”
+            </h3>
+            <h4>
+                – Benjamin Franklin
+            </h4>
+        </div>
+    </div>
+    <div class="contact-information">
+        <h3>
+            Contact Information
+        </h3>
+        <ul>
+            <li>Email address: somebody@someplace.net</li>
+            <li>Phone number: 555-555-5555</li>
+        </ul>
+    </div>
+</main>
+{% endblock %}

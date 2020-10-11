@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./css/brew-styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./css/fontawesome-free-5.14.0-web/css/all.css') }}">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cookie">
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+    {% block header %}{% endblock %}
+    <nav class="nav">
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('alcohol') }}">Alcoholic Beverages</a></li>
+            <li><a href="{{ url_for('menu') }}" >Menu</a></li>
+            <li><a href="{{ url_for('store') }}">Store</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+    {% block body %}{% endblock %}
+    <div id="sidebar">
+        <br>
+        <br>
+        <h3>Follow us on social media</h3>
+        <div id="social-media">
+            <!-- Instagram Icon -->
+            <div class="social-media">
+                <i class="fab fa-instagram"></i>
+                <a href="./#">Instagram</a>
+            </div>
+            <!-- Twitter Icon -->
+            <div class="social-media">
+                <i class="fab fa-twitter"></i>
+                <a href="./#">Twitter</a>
+            </div>
+            <!-- FB Icon -->
+            <div class="social-media">
+                <i class="fab fa-facebook"></i>
+                <a href="./#">Facebook</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div id="divide-line">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='./css/Images/Grains of Wrath Logo.jpg') }}" alt="Grains of Wrath Logo"
+                height="150px">
+        </div>
+    </div>
+    <br>
+    <div id="footer">
+        <div class="home-link">
+            <a class="home-link" href="#top">Back to top</a>
+            <p id="copyright" height="20px">copyright&copy;2020</p>
+        </div>
+    </div>
+</body>
+
+</html>
